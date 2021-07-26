@@ -220,9 +220,9 @@ elif sys.argv[1] == "-validate" or sys.argv[1] == "-val" or sys.argv[1] == "-v":
             sum = int(keysplit[5]) + int(keysplit[6]) + int(keysplit[7]) + int(keysplit[8]) + int(keysplit[9]) + int(keysplit[10]) + int(keysplit[11])
 
             # Convert fourth digit back, if necessary.
-            if four == 1:
+            if four == 0:
                 four = 10
-            elif four == 2:
+            elif four == 1:
                 four = 11
 
             # Check if fourth digit is greater than the third by either two or one.
@@ -370,10 +370,10 @@ if key_type == 11:
 
     # Overflow if necessary.
     if fourth == 10:
-        fourth = 1
+        fourth = 0
         four = init + str(fourth)
     elif fourth == 11:
-        fourth = 2
+        fourth = 1
         four = init + str(fourth)
     else:
         four = init + str(fourth)
