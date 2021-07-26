@@ -1,5 +1,5 @@
 # MOD7 Key Tool
-Made with love, poor code, and six hours of my time.
+Made with Python, love, poor code, and six hours of my time.
 
 # Usage
 m7kt.py [options] [id/key]
@@ -20,3 +20,7 @@ OEM 20-digit | oem20 or 20
 
 # Why I made this.
 I was bored so I made it. Enjoy!
+
+# Notes
+- If the first three digits of a CD 10-digit key are letters, it will say invalid key. Despite Windows 95 not caring.
+- If you would like to see exactly what tests failed during the check, set verbose to True in the Python script.
