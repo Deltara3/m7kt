@@ -3,7 +3,6 @@
 
 import sys
 import os
-from types import coroutine
 import colorama
 import random
 
