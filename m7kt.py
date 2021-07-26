@@ -362,6 +362,22 @@ if key_type == 10:
 if key_type == 11:
     # First four digits, randomly generate the first three.
     init = t10rangen(3, True)
+    
+    # Modify first three generated digits if necessary.
+    while len(init) != 3:
+        strlen = len(init)
+
+        if strlen == 1:
+            add = t10rangen(2, True)
+            init = init + add
+        elif strlen == 2:
+            add = t10rangen(1, True)
+            init = init + add
+        else:
+            print(colorama.Fore.MAGENTA + "[ERROR] " + colorama.Style.RESET_ALL + "Invalid string length.")
+            colorama.deinit()
+            sys.exit()
+    
     # Last of the four digits is the third digit, greater by either one or two.
     splitinit = split(init)
     plus = random.randrange(1, 2)
