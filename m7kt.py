@@ -1,4 +1,4 @@
-# Mod7 Key Tools (m7kt)
+# Mod7 Key Tool (m7kt)
 # Thank you Deltara (me) for poorly writing this!
 
 import sys
@@ -48,9 +48,9 @@ if arglen == 0:
     print("Generate: -generate, -gen, -g")
     print("Validate: -validate, -val, -v\n")
     print("Type         |  Id")
-    print("CD 10-digit  | cd10")
-    print("CD 11-digit  | cd11")
-    print("OEM 20-digit | oem20\n")
+    print("CD 10-digit  | cd10 or 10")
+    print("CD 11-digit  | cd11 or 11")
+    print("OEM 20-digit | oem20 or 20\n")
     print("Id is for generation.")
     print("Key is for validation.")
     colorama.deinit()
