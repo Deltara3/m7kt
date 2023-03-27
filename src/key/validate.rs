@@ -1,7 +1,7 @@
 use crate::util;
 
 const THREE_BLOCK_BLACKLIST: [u16; 7] = [333, 444, 555, 666, 777, 888, 999];
-const YEAR_WHITELIST: [u8; 9] = [95, 96, 97, 98, 99, 00, 01, 02, 03];
+const YEAR_WHITELIST: [u8; 8] = [95, 96, 97, 98, 99, 00, 01, 02];
 const OEM_BLOCK: &str = "OEM";
 
 pub fn three_block(block: u16) -> bool {

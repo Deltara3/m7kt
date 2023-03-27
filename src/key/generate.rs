@@ -39,7 +39,7 @@ pub fn oem20() -> String {
         date = vec!["0".repeat(3 - date.chars().count()), date].join("");
     }
 
-    let mut year = rand::thread_rng().gen_range(95..104).to_string();
+    let mut year = rand::thread_rng().gen_range(95..103).to_string();
 
     if year.chars().count() == 3 {
         let buffer = util::split(&year);
