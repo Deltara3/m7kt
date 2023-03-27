@@ -1,25 +1,16 @@
 # MOD7 Key Tool
-Made with Python, love, poor code, and six hours of my time.
+Validator and generator for MOD7 based keys, such as Windows 95.
 
 # Usage
-m7kt.py [options] [id/key]
+m7kt [subcommand] <id/key>
 
-Option | Switch
+Option | Command
 -------|-------
-Generate | -generate, -gen, -g
-Validate | -validate, -val, -v
+Generate | m7kt generate -t <id>
+Validate | m7kt validate -k <key>
 
 Type | Id
 -----|----
-CD 10-digit | cd10 or 10
-CD 11-digit | cd11 or 11
-OEM 20-digit | oem20 or 20
-
-# Dependency
-```pip install colorama```
-
-# Why I made this.
-I was bored so I made it. Enjoy!
-
-# Notes
-- If you would like to see exactly what tests failed during the check, set verbose to True in the Python script.
+CD 10-digit | 10
+CD 11-digit | 11
+OEM 20-digit | 20
