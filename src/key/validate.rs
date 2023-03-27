@@ -107,7 +107,11 @@ pub fn key(key: &String) -> bool {
                     if seven_block(blocks[2].parse().expect("Error")) {
                         if blocks[3].to_string().parse::<f64>().is_ok() {
                             if blocks[3].to_string().chars().count() == 5 {
-                                return true;
+                                if util::split(blocks[2])[0] == '0' {
+                                    return true;
+                                } else {
+                                    return false;
+                                }
                             } else {
                                 return false;
                             }
